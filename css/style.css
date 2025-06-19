@@ -103,10 +103,12 @@ section#content {
 }
 
 section.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 16px;
+  padding: 1rem;
   width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  box-sizing: border-box;
 }
 
 section.gallery figure {
@@ -117,9 +119,9 @@ section.gallery figure {
 
 section.gallery figure img {
   width: 100%;
+  height: auto;
   display: block;
-  filter: grayscale(100%);
-  transition: transform 0.5s ease, opacity 0.5s ease;
+  filter: none;
 }
 
 section.gallery figure img:hover {
