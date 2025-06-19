@@ -115,18 +115,15 @@ section.gallery figure {
   margin: 0;
   padding: 0;
   width: 100%;
+  overflow: hidden;
 }
 
 section.gallery figure img {
   width: 100%;
   height: auto;
   display: block;
-  filter: none;
-}
-
-section.gallery figure img:hover {
-  transform: scale(1.05);
-  opacity: 0.8;
+  object-fit: cover;
+  aspect-ratio: 4/3;
 }
 
 @media screen and (min-width: 480px) {
